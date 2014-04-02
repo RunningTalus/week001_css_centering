@@ -1,18 +1,28 @@
+/* Horizontally center a block-level element. */
+
 .main {
 	background-color: orange;
 	height: 400px;
-	/* T R B L */
-	/* T/B R/L */
-	/* T R/L B */
+/* T R B L */
+/* T/B R/L */
+/* T R/L B */
 	margin: 0 auto;
 	width: 400px;
 }
+
+/* Horizontally center and inline element (apply to parent). */
+
+.announcement {
+	text-align: center;
+}
+
+/* Vertically center an inline element (apply to parent). */
 
 .box {
 	width: 300px;
 	height: 300px;
 	background-color: wheat;
-	/*position: relative;*/
+/* position: relative; */
 	display: table;
 }
 
@@ -26,16 +36,21 @@
 	height: 50px;
 	background-color: red;
 	border-radius: 50px;
-/*	top: 50%;
-	position: absolute;
-	margin-top: -25px;*/
-	/* margin-top must be specified in pixels, AND we must now the height of the box in pixels to center */
+/* postion: absolute; */
+/* top: 50%; */
+/* margin-top: -25px;*/
+/* margin-top must be specified in pixels, AND we must now the height of the box in pixels to center. */
 }
+
+/* Vertically center text */
 
 .text-container {
 	background-color: pink;
 	line-height: 200px;
+	vertical-align: middle;
 }
+
+/* Multiple lines of text necessitate an inline-block wrapper. */
 
 .text{
 	display: inline-block;
@@ -43,16 +58,13 @@
 	line-height: 1;
 }
 
+/* Vertically center other inline elements. */
+
 .image-container {
 	background-color: pink;
 	line-height: 300px;
-	vertical-align: middle;
 }
 
 .image-container img {
 	vertical-align: middle;
-}
-
-.announcement {
-	text-align: center;
 }
